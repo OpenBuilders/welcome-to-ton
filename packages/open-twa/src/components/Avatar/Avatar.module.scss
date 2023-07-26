@@ -1,0 +1,18 @@
+.root {
+  vertical-align: middle;
+  border: 0;
+  outline: none;
+  border-radius: 50%;
+  // background-color: var(--color-bg-secondary);
+  background-color: rgb(138, 227, 208);
+
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.size-24 {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+}

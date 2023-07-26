@@ -1,0 +1,37 @@
+.container {
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.hasBorders {
+  min-width: 300px;
+  max-width: 550px;
+  margin: 0px auto;
+  border-left: 1px solid rgba(79, 90, 112, 0.2);
+  border-right: 1px solid rgba(79, 90, 112, 0.2);
+
+  overflow: hidden;
+  height: 100vh;
+}
+
+.screen {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  will-change: transform;
+}
+
+.hidden {
+  z-index: -1;
+}
+
+.visible {
+  z-index: 10;
+}

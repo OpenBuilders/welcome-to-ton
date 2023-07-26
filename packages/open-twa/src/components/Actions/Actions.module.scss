@@ -1,0 +1,140 @@
+@import '@mixins/theme.scss';
+@import '@mixins/shared.scss';
+
+.backdrop {
+  user-select: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 200;
+  transition: opacity 0.3s ease;
+
+  &.opened {
+    pointer-events: initial;
+    opacity: 1;
+  }
+
+  @include iosLight {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  @include iosDark {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.root {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  z-index: 3000;
+  width: 100%;
+  transform: translate(-50%, 100%);
+  // display: none;
+  max-height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+
+  &.opened {
+    transform: translate(-50%, 0);
+    pointer-events: initial;
+    opacity: 1;
+  }
+}
+
+.actionGroup {
+  overflow: hidden;
+  position: relative;
+  margin: 8px;
+  border-radius: 12px;
+
+  @include iosLight {
+    background-color: rgba(245, 245, 245, 0.7);
+  }
+
+  @include iosDark {
+    background-color: rgba(24, 24, 24, 0.7);
+  }
+
+  & > *:not(:last-child) {
+    @include separatorHorizontal;
+  }
+}
+
+.actionGroupTitle {
+  @include flexCenter;
+  font-size: 13px;
+  min-height: 42px;
+
+  @include iosLight {
+    color: rgba(60, 60, 67, 0.6);
+    background-color: rgba(245, 245, 245, 0.7);
+  }
+
+  @include iosDark {
+    color: rgba(235, 235, 245, 0.6);
+    background-color: rgba(24, 24, 24, 0.7);
+  }
+}
+
+.button {
+  @include flexCenter;
+  user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+  letter-spacing: 0;
+  vertical-align: middle;
+  border: none;
+  color: rgba(0, 122, 255, 1);
+  font-size: 17px;
+  text-align: center;
+  height: 61px;
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color ease;
+  transition-duration: 0.3s;
+  padding: 0;
+
+  @include iosLight {
+    background-color: rgba(245, 245, 245, 0.7);
+  }
+
+  @include iosDark {
+    background-color: rgba(24, 24, 24, 0.7);
+  }
+
+  &:first-child {
+    border-bottom-left-radius: 12px;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 12px;
+  }
+
+  &:active {
+    transition-duration: 0s;
+
+    @include iosLight {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    @include iosDark {
+      background-color: rgba(0, 122, 255, 0.15);
+    }
+  }
+
+  &.destructive {
+    color: #ff453a;
+  }
+}

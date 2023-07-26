@@ -1,0 +1,86 @@
+:root {
+  --font-display-ios: -apple-system, 'SF Pro Text', 'SF UI Text', system-ui,
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display-ios-rounded: 'SF Pro Rounded', -apple-system, 'SF Pro Text',
+    'SF UI Text', system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display-material: Roboto, system-ui, Noto, Helvetica, Arial, sans-serif;
+
+  --palette-white: #fff;
+
+  --k-device-pixel-ratio: 2;
+  --body-padding: 16px;
+
+  --palette-dark-4: #efeff3;
+  --palette-dark-90: #1c1c1e;
+  --palette-dark: #000;
+
+  --palette-transparent-grey-65: rgba(84, 84, 88, 0.65);
+  --palette-transparent-grey-18: rgba(116, 116, 128, 0.18);
+  --palette-transparent-grey-8: rgba(116, 116, 128, 0.08);
+
+  --palette-transparent-white-60: rgba(235, 235, 245, 0.6);
+  --palette-transparent-white-30: rgba(235, 235, 245, 0.3);
+  --palette-transparent-white-18: rgba(235, 235, 245, 0.18);
+
+  --palette-transparent-dark-80: rgba(45, 45, 45, 0.8);
+  --palette-transparent-dark-60: rgba(60, 60, 67, 0.6);
+  --palette-transparent-dark-36: rgba(60, 60, 67, 0.36);
+  --palette-transparent-dark-30: rgba(60, 60, 67, 0.3);
+  --palette-transparent-dark-18: rgba(60, 60, 67, 0.18);
+
+  --palette-brand-dark: #007aff;
+  --palette-brand-light: #0a84ff;
+
+  --palette-red-light: #ff3b30;
+  --palette-red-dark: #ff4530;
+
+  --palette-green-light: #34c759;
+  --palette-green-dark: #30d158;
+
+  --elevation-light-1: 0px 10px 60px rgba(0, 0, 0, 0.1);
+  --elevation-dark-1: 0px 10px 60px rgba(0, 0, 0, 0.7);
+
+  --tg-theme-button-color: red;
+}
+
+// @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx) {
+//   :root {
+//     --k-device-pixel-ratio: 1.25;
+//   }
+// }
+
+// @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+//   :root {
+//     --k-device-pixel-ratio: 1.5;
+//   }
+// }
+
+// @media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 1.75dppx) {
+//   :root {
+//     --k-device-pixel-ratio: 1.75;
+//   }
+// }
+
+// @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+//   :root {
+//     --k-device-pixel-ratio: 2;
+//   }
+// }
+
+// @media (-webkit-min-device-pixel-ratio: 2.25), (min-resolution: 2.25dppx) {
+//   :root {
+//     --k-device-pixel-ratio: 2.25;
+//   }
+// }
+
+// @media (-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 2.5dppx) {
+//   :root {
+//     --k-device-pixel-ratio: 2.5;
+//   }
+// }
+
+// @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+//   :root {
+//     --k-device-pixel-ratio: 3;
+//   }
+// }

@@ -1,0 +1,12 @@
+.root {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 54px;
+  padding: 0 16px;
+  background-color: #bababa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

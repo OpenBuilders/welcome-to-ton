@@ -1,0 +1,42 @@
+@import '@mixins/theme.scss';
+
+.root {
+  margin-left: calc(var(--body-padding) * -1);
+  margin-right: calc(var(--body-padding) * -1);
+  flex: 1 1 auto;
+}
+
+.light {
+}
+
+.dark {
+}
+
+.solid {
+  @include iosLight {
+    background-color: var(--color-bg-primary);
+  }
+
+  @include iosDark {
+    background-color: var(--color-bg-primary);
+  }
+}
+
+.inset {
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 8px;
+  overflow: hidden;
+
+  @include ios {
+    border-radius: 10px;
+  }
+
+  @include iosLight {
+    background-color: var(--color-bg-primary);
+  }
+
+  @include iosDark {
+    background-color: var(--color-bg-primary);
+  }
+}

@@ -1,0 +1,35 @@
+@mixin ios() {
+  @at-root #{selector-nest('body[data-theme=ios]', &)} {
+    @content;
+  }
+}
+
+@mixin material() {
+  @at-root #{selector-nest('body[data-theme=material]', &)} {
+    @content;
+  }
+}
+
+@mixin iosLight() {
+  @at-root #{selector-nest('body[data-theme=ios][data-mode=light]', &)} {
+    @content;
+  }
+}
+
+@mixin iosDark() {
+  @at-root #{selector-nest('body[data-theme=ios][data-mode=dark]', &)} {
+    @content;
+  }
+}
+
+@mixin materialLight() {
+  @at-root #{selector-nest('body[data-theme=material][data-mode=light]', &)} {
+    @content;
+  }
+}
+
+@mixin materialDark() {
+  @at-root #{selector-nest('body[data-theme=material][data-mode=dark]', &)} {
+    @content;
+  }
+}

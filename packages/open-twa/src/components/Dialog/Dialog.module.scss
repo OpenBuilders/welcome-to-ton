@@ -1,0 +1,125 @@
+@import '@mixins/theme.scss';
+@import '@mixins/shared.scss';
+
+.backdrop {
+  user-select: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  opacity: 0;
+  z-index: 200;
+  transition: opacity 0.3s ease;
+
+  &.opened {
+    pointer-events: initial;
+    opacity: 1;
+  }
+}
+
+.dialog {
+  border-radius: 14px;
+  width: 273px;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 200;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.85, 0.85);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+  opacity: 0;
+  // backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: blur(11px);
+
+  @include iosLight {
+    background-color: rgba(242 242 242 / 0.8);
+  }
+
+  @include iosDark {
+    // background-color: rgba(30, 30, 30, 0.75);
+    background-color: rgba(38, 38, 38, 0.8);
+  }
+
+  &.opened {
+    transform: translate(-50%, -50%) scale(1, 1);
+    pointer-events: initial;
+    opacity: 1;
+  }
+}
+
+.body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include separatorHorizontal;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.content {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.buttons {
+  @include flexCenter;
+}
+
+.button {
+  @include flexCenter;
+  user-select: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-decoration: none;
+  letter-spacing: 0;
+  vertical-align: middle;
+  border: none;
+  color: rgba(0, 122, 255, 1);
+  font-size: 17px;
+  text-align: center;
+  height: 44px;
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color ease;
+  transition-duration: 0.3s;
+  padding: 0;
+
+  &:first-child {
+    border-bottom-left-radius: 16px;
+    @include separatorRight;
+  }
+
+  &:last-child {
+    border-bottom-right-radius: 16px;
+  }
+
+  &:active {
+    transition-duration: 0s;
+
+    @include iosLight {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    @include iosDark {
+      background-color: rgba(0, 122, 255, 0.15);
+    }
+  }
+}

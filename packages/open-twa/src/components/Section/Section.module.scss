@@ -1,0 +1,35 @@
+@import '@mixins/theme.scss';
+
+.root {
+  padding: 16px;
+  overflow: hidden;
+}
+
+.solid {
+  @include iosLight {
+    background-color: #fff;
+  }
+
+  @include iosDark {
+    background-color: #1c1c1e;
+  }
+}
+
+.inset {
+  // margin-left: 16px;
+  // margin-right: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  @include ios {
+    border-radius: 10px;
+  }
+
+  @include iosLight {
+    background-color: #fff;
+  }
+
+  @include iosDark {
+    background-color: #1c1c1e;
+  }
+}

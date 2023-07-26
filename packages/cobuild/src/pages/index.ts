@@ -1,0 +1,6 @@
+export * from './challenge/ChallengePage'
+export * from './community/CommunityPage'
+export * from './forward/ForwardPage'
+export * from './home/HomePage'
+export * from './story/StoryPage'
+export * from './task/TaskPage'

@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "open-twa:build": "yarn workspace open-twa build",
+    "open-twa:dev": "yarn workspace open-twa dev",
+    "playground:dev": "yarn workspace playground dev && yarn workspace open-twa dev",
+    "cobuild:dev": "yarn workspace cobuild dev",
+    "cobuild:build": "yarn workspace cobuild build",
+    "cobuild:preview": "yarn workspace cobuild preview"
+  },
+  "dependencies": {
+    "eslint": "^8.37.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@types/node": "^18.15.11",
+    "babel-loader": "^8.3.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0",
+    "vite-plugin-dts": "^2.1.0"
+  }
+}

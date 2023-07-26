@@ -1,0 +1,68 @@
+:root {
+  --color-black: var(--palette-black);
+  --color-white: var(--palette-white);
+
+  --color-tg-button: var(--tg-theme-button-color);
+}
+
+[data-theme='ios'] {
+  --color-bg-primary: var(--palette-dark-4);
+  --color-bg-secondary: var(--palette-white);
+  --color-bg-button-tertiary: var(--palette-transparent-grey-8);
+
+  --color-text-primary: var(--palette-dark);
+  --color-text-secondary: var(--palette-transparent-dark-60);
+  --color-text-tertiary: var(--palette-transparent-dark-30);
+  --color-text-fourth: var(--palette-transparent-dark-18);
+
+  --color-black: var(--palette-black);
+  --color-white: var(--palette-white);
+
+  --color-separator: var(--palette-transparent-dark-36);
+
+  --color-accent-brand: var(--palette-brand-dark);
+  --color-accent-red: var(--palette-red-light);
+  --color-accent-green: var(--palette-green-light);
+
+  --color-link: var(--palette-brand-dark);
+
+  --font-display: var(--font-display-ios);
+
+  --elevation-1: var(--elevation-light-1);
+}
+
+[data-theme='ios'][data-mode='dark'] {
+  --color-bg-primary: var(--palette-dark);
+  --color-bg-secondary: var(--palette-dark-90);
+  --color-bg-button-tertiary: var(--palette-transparent-grey-18);
+
+  --color-text-primary: var(--palette-white);
+  --color-text-secondary: var(--palette-transparent-white-60);
+  --color-text-tertiary: var(--palette-transparent-white-30);
+  --color-text-fourth: var(--palette-transparent-white-18);
+
+  --color-separator: var(--palette-transparent-grey-65);
+
+  --color-accent-brand: var(--palette-brand-light);
+  --color-accent-red: var(--palette-red-dark);
+  --color-accent-green: var(--palette-green-light);
+
+  --color-link: var(--palette-brand-light);
+
+  --elevation-1: var(--elevation-dark-1);
+}
+
+[data-theme='material'] {
+  --color-surface: #fef7ff;
+  --color-text-primary: #1d1b20;
+  --color-text-secondary: #3a3a3c;
+  --font-display: var(--font-display-material);
+  --color-separator: red;
+}
+
+[data-theme='material'][data-mode='dark'] {
+  --color-surface: #141218;
+  --color-text-primary: #cac4d0;
+  --color-text-secondary: #d1d1d6;
+  --color-separator: red;
+}

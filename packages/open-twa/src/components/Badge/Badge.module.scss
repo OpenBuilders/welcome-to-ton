@@ -1,0 +1,30 @@
+.root {
+  background-color: #6a7280;
+  color: #fff;
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.green {
+  background-color: rgba(52, 199, 89, 1);
+}
+
+.blue {
+  background-color: rgba(0, 122, 255, 1);
+}
+
+.orange {
+  background-color: rgba(255, 149, 0, 1);
+}
+
+.gray {
+  background-color: #6a7280;
+}

@@ -1,0 +1,193 @@
+.root {
+  word-wrap: break-word;
+  min-width: 0; // for flexbox
+  max-width: 100%;
+  color: var(--color-text-primary);
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.noWrap {
+  white-space: nowrap;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.typeface-body {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.typeface-subhead {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.typeface-footnote {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.typeface-header-20 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 590;
+  margin: 24px 0 4px;
+}
+
+.typeface-header-22 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 24px 0 4px;
+}
+
+.typeface-header-28 {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 700;
+  margin: 24px 0 4px;
+}
+
+.weight-semibold {
+  font-weight: 590;
+}
+
+.weight-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.strike {
+  text-decoration-line: line-through;
+}
+
+.sfRounded {
+  font-family: var(--font-display-ios-rounded);
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.margin-0-0-2-0 {
+  margin: 0 0 2px 0;
+}
+
+.margin-0-0-4-0 {
+  margin: 0 0 4px 0;
+}
+
+.margin-0-0-8-0 {
+  margin: 0 0 8px 0;
+}
+
+.margin-0-0-10-0 {
+  margin: 0 0 10px 0;
+}
+
+.margin-0-0-12-0 {
+  margin: 0 0 12px 0;
+}
+
+.margin-0-0-24-0 {
+  margin: 0 0 24px 0;
+}
+
+.margin-16-0 {
+  margin: 16px 0;
+}
+
+.margin-24-0-4-0 {
+  margin: 24px 0 4px 0;
+}
+
+.margin-24-0-6-0 {
+  margin: 24px 0 6px 0;
+}
+
+.margin-24-0-8-0 {
+  margin: 24px 0 8px 0;
+}
+
+.margin-24-0-10-0 {
+  margin: 24px 0 10px 0;
+}
+
+.margin-24-0-12-0 {
+  margin: 24px 0 12px 0;
+}
+
+.color-primary {
+  color: var(--color-text-primary);
+}
+
+.color-secondary {
+  color: var(--color-text-secondary);
+}
+
+.color-tertiary {
+  color: var(--color-text-tertiary);
+}
+
+.color-fourth {
+  color: var(--color-text-fourth);
+}
+
+.color-red {
+  color: var(--color-accent-red);
+}
+
+.color-green {
+  color: var(--color-accent-green);
+}
+
+.color-white {
+  color: var(--color-white);
+}
+
+// .header,
+// .footer {
+//   font-weight: 400;
+//   padding: 0 16px;
+
+//   @include ios {
+//     font-size: 12px;
+//     line-height: 16px;
+//   }
+
+//   @include material {
+//     font-size: 16px;
+//   }
+// }
+
+// .header {
+//   text-transform: uppercase;
+//   margin: 32px 0 4px 0;
+// }
+
+// .footer {
+//   margin: -4px 0 32px 0;
+// }
+
+// .inset {
+//   padding-left: 32px;
+// }

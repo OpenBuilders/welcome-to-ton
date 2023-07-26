@@ -1,0 +1,21 @@
+body {
+  background-color: #282c34;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.segment {
+  width: 422px;
+  height: 800px;
+  overflow-y: auto;
+  position: relative;
+}
+
+:root {
+  --font-display-ios: Inter, -apple-system, 'SF Pro Text', 'SF UI Text',
+    system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

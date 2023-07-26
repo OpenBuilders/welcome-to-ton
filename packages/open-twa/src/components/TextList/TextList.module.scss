@@ -1,0 +1,17 @@
+.root {
+  color: var(--color-text-primary);
+  list-style-type: none;
+  padding: 0 0 0 24px;
+  margin: 0;
+
+  li {
+    margin-bottom: 12px;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+}
+
+.style-type-decimal {
+  list-style-type: decimal;
+}

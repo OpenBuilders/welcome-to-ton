@@ -1,0 +1,74 @@
+.root {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+}
+
+// .hasModal {
+//   overflow: hidden;
+//   height: 100%;
+//   max-height: 100%;
+
+//   & > div {
+//     overflow: hidden;
+//     height: 100%;
+//     max-height: 100%;
+//   }
+// }
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  will-change: opacity;
+
+  display: none;
+}
+
+.modal {
+  z-index: 200;
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--color-bg-primary);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  will-change: transform;
+  display: flex;
+  flex-direction: column;
+  // height: 100vh;
+}
+
+.body {
+  padding: 0 var(--body-padding);
+  flex: 1 1 auto;
+  transition: opacity 0.25s ease;
+  // opacity: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 56px;
+}
+
+.backButton {
+  padding: var(--body-padding);
+  color: var(--color-tg-button);
+  font-weight: 500;
+  cursor: pointer;
+}

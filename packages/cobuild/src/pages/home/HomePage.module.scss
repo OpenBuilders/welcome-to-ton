@@ -1,0 +1,44 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(50% - 4px);
+  background-color: var(--color-bg-primary);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 8px;
+
+  transition: background-color ease;
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:active {
+    transition-duration: 0s;
+    background-color: rgba(0, 122, 255, 0.15);
+  }
+}
+
+.title {
+  margin-bottom: 4px;
+  font-size: 17px;
+  font-weight: 510;
+}
+
+.members {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-bottom: 2px;
+}
+
+.challenges {
+  font-size: 14px;
+  font-weight: 590;
+  color: #34c759;
+}

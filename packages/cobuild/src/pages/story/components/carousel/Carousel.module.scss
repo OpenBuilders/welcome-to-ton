@@ -1,0 +1,318 @@
+@use '../../../../../../open-twa/src/styles/mixins/theme.scss' as themeMix;
+
+$marginVertical: 56px;
+
+.root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+}
+
+.slides {
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.textBlock {
+  // position: absolute;
+  padding: 0 24px 20px;
+  color: var(--color-white);
+  width: 100%;
+
+  &Locked {
+    color: var(--color-text-tertiary);
+    text-align: center;
+    font-weight: 590;
+    font-size: 17px;
+  }
+
+  .eyes {
+    font-size: 100px;
+    margin-bottom: 16px;
+    line-height: 120px;
+    color: #000;
+  }
+}
+
+.title {
+  font-family: var(--font-display-ios-rounded);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  margin-bottom: 16px;
+}
+
+.subheadLine {
+  font-weight: 590;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 16px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.content-position-top {
+  top: $marginVertical;
+}
+
+.content-position-center {
+  // top: 50%;
+  // transform: translateY(-50%);
+}
+
+.content-position-bottom {
+  bottom: $marginVertical;
+}
+
+.content-justify-center {
+  text-align: center;
+}
+
+.slideWrap {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 90;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  // padding-bottom: 230px;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.progressBar {
+  height: 20px;
+  padding: 0 8px;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  left: var(--body-padding);
+  top: 8px;
+  right: var(--body-padding);
+  z-index: 110;
+  margin: calc(-1 * var(--body-padding)) calc(-1 * var(--body-padding)) 0;
+}
+
+.bar {
+  height: 2px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+  flex-grow: 1;
+  margin-right: 6px;
+  transition: background-color 0.1s ease;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &Completed {
+    background-color: var(--color-white);
+  }
+}
+
+.bg-style-locked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include themeMix.iosLight {
+    background: #efeff3;
+  }
+
+  @include themeMix.iosDark {
+    background: var(--color-text-fourth);
+  }
+}
+
+.leftHolder {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 120;
+}
+
+.rightHolder {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  z-index: 120;
+}
+
+.bg-style-1-solid {
+  background: linear-gradient(180deg, #3d82fe 0%, #60a2fd 52%, #73d1fa 100%);
+}
+
+@mixin bg-style-image-top {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 top;
+}
+
+@mixin bg-style-image-bottom {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 bottom;
+}
+
+.bg-style-1-solid {
+  background: linear-gradient(180deg, #3d82fe 0%, #60a2fd 52%, #73d1fa 100%);
+}
+
+.bg-style-1-image {
+  @extend .bg-style-1-solid;
+
+  &:before {
+    @include bg-style-image-top;
+    background-image: url('https://cobuild.ams3.digitaloceanspaces.com/assets/bg-style-1-image.png');
+  }
+
+  &:after {
+    @include bg-style-image-bottom;
+    background-image: url('https://cobuild.ams3.digitaloceanspaces.com/assets/bg-style-1-image.png');
+  }
+}
+
+.bg-style-2-solid {
+  background: linear-gradient(153deg, #6a6dff 0%, #7e79ff 40%, #998aff 78%);
+}
+
+.bg-style-2-image {
+  @extend .bg-style-2-solid;
+
+  &:before {
+    @include bg-style-image-top;
+    background-image: url('https://cobuild.ams3.digitaloceanspaces.com/assets/bg-style-2-image.png');
+  }
+
+  &:after {
+    @include bg-style-image-bottom;
+    background-image: url('https://cobuild.ams3.digitaloceanspaces.com/assets/bg-style-2-image.png');
+  }
+}
+
+.bg-style-3-solid {
+  background: linear-gradient(
+    180deg,
+    #7283ff 0%,
+    #7a9bfe 48%,
+    #81adfe 70%,
+    #89beff 100%
+  );
+}
+
+.bg-style-3-image {
+  @extend .bg-style-3-solid;
+
+  &:before {
+    @include bg-style-image-top;
+    background-image: url('https://cobuild.ams3.digitaloceanspaces.com/assets/bg-style-3-image.png');
+  }
+
+  &:after {
+    @include bg-style-image-bottom;
+    background-image: url('https://cobuild.ams3.digitaloceanspaces.com/assets/bg-style-3-image.png');
+  }
+}
+
+.bg-style-4-solid {
+  background: radial-gradient(
+      43% 34% at 91% 12%,
+      #88c6ff 0%,
+      rgba(136, 198, 255, 0) 100%
+    ),
+    radial-gradient(76% 52% at 14% 87%, #7177ff 0%, rgba(116, 123, 255, 0) 100%),
+    linear-gradient(157deg, #5994fe 0%, #7e9ffe 48%, #9aa2fe 100%);
+}
+
+.bg-style-4-image {
+  @extend .bg-style-4-solid;
+
+  &:before {
+    @include bg-style-image-top;
+    background-image: url('https://cobuild.ams3.digitaloceanspaces.com/assets/bg-style-2-image.png');
+  }
+
+  &:after {
+    @include bg-style-image-bottom;
+    background-image: url('https://cobuild.ams3.digitaloceanspaces.com/assets/bg-style-2-image.png');
+  }
+}
+
+.bg-style-5-solid {
+  background: linear-gradient(180deg, #1a81f8 0%, #3490fa 23%, #92c8ff 100%);
+}
+
+.bg-style-ton-basics {
+  background: linear-gradient(337deg, #3d82fe 0%, #60a2fd 52%, #73d1fa 100%);
+}
+
+.bg-style-tonkeeper {
+  background-color: #0f1620;
+}
+
+.bg-style-fragment {
+  background-color: #1b2025;
+}
+
+.bg-style-getgems {
+  background-color: #0593ff;
+}
+
+.bg-style-tonstarter {
+  background-color: #496aeb;
+}
+
+.bg-style-wallet {
+  background: radial-gradient(260% 358% at 0% 2.5%, #33d7fb 0%, #0f7fcf 100%);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    bottom: 50px;
+    mix-blend-mode: lighten;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 bottom;
+    background-image: url('https://cobuild.ams3.digitaloceanspaces.com/assets/bg-style-wallet-image.png');
+  }
+}
