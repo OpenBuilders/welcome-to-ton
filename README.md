@@ -1,6 +1,6 @@
 # Welcome to TON
 
-Telegram web app with "Welcome to TON" campaign in [@joincommunity_bot](https://t.me/joincommunity_bot)
+Telegram web app with "Welcome to TON" campaign in [[@community_bot](https://t.me/community_bot/welcome)]
 
 *Built by [Open Builders](https://openbuilders.xyz)*
 
